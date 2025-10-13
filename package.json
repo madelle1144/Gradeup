@@ -1,0 +1,30 @@
+{
+  "name": "gradeup-celebration-portal",
+  "version": "1.0.0",
+  "description": "School promotion portal with M-Pesa integration",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "mpesa",
+    "school",
+    "promotion",
+    "kenya",
+    "education",
+    "certificate"
+  ],
+  "author": "GradeUp Team",
+  "license": "MIT"
+}

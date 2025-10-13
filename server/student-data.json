@@ -1,0 +1,78 @@
+{
+  "students": [
+   
+    {
+      "id": "F1-002",
+      "name": "Mary Wanjiku",
+      "class": "Form 1",
+      "term1": 82,
+      "term2": 85,
+      "term3": 89,
+      "promoted": true
+    },
+    {
+      "id": "F1-003",
+      "name": "James Otieno",
+      "class": "Form 1",
+      "term1": 45,
+      "term2": 52,
+      "term3": 58,
+      "promoted": false
+    },
+    {
+      "id": "F1-004",
+      "name": "Sarah Achieng",
+      "class": "Form 1",
+      "term1": 88,
+      "term2": 84,
+      "term3": 91,
+      "promoted": true
+    },
+    {
+      "id": "F1-005",
+      "name": "David Kamau",
+      "class": "Form 1",
+      "term1": 71,
+      "term2": 76,
+      "term3": 82,
+      "promoted": true
+    },
+    {
+      "id": "F2-001",
+      "name": "Grace Muthoni",
+      "class": "Form 2",
+      "term1": 78,
+      "term2": 81,
+      "term3": 85,
+      "promoted": true
+    },
+    {
+      "id": "F2-002",
+      "name": "Brian Omondi",
+      "class": "Form 2",
+      "term1": 55,
+      "term2": 63,
+      "term3": 70,
+      "promoted": false
+    },
+    {
+      "id": "F2-003",
+      "name": "Lucy Njeri",
+      "class": "Form 2",
+      "term1": 91,
+      "term2": 87,
+      "term3": 93,
+      "promoted": true
+    },
+    {
+      "id": "F2-004",
+      "name": "Emmanuel Madelle",
+      "class": "Form 2",
+      "term1": 91,
+      "term2": 90,
+      "term3": 93,
+      "promoted": true
+    }
+  ]
+}
+

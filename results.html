@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! - GradeUp Portal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Grade<span>Up</span> Celebration Portal</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#payment">Check Another</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="celebration" id="celebration">
+        <div class="container">
+            <h1 class="congrats">CONGRATULATIONS!</h1>
+            <h2 class="student-name" id="display-name">Student Name</h2>
+            
+            <div class="performance-graph">
+                <h3>Your Performance Progress</h3>
+                <div class="graph-bar" style="width: 75%;">Term 1: 75%</div>
+                <div class="graph-bar" style="width: 82%;">Term 2: 82%</div>
+                <div class="graph-bar" style="width: 90%;">Term 3: 90%</div>
+            </div>
+            
+            <p class="personal-message">You have demonstrated exceptional growth and dedication throughout the academic year. Your consistent improvement across all terms shows your commitment to excellence. We are proud to promote you to the next class!</p>
+            
+            <div class="certificate">
+               
+                <h2>CONGRATULATIONS</h2>
+                <p>This certifies that</p>
+                <h3 class="student-name" id="certificate-name">Student Name</h3>
+                <p>has successfully completed the academic requirements and is hereby promoted to the next class.</p>
+                <p>We commend your hard work, dedication, and academic achievement.</p>
+                <p class="date">Date: <span id="certificate-date">July 15, 2023</span></p>
+                <div class="signatures">
+                    <div class="signature">
+                        <p>_________________________</p>
+                        <p>Principal</p>
+                    </div>
+                    <div class="signature">
+                        <p>_________________________</p>
+                        <p>Class Teacher</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="download-btn" class="btn" style="margin-top: 30px;">Download Certificate</button>
+            <button id="share-btn" class="btn btn-secondary" style="margin-top: 15px;">Share Achievement</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GradeUp Celebration Portal</h3>
+                    <p>Celebrating student achievements across Kenya</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@gradeup.co.ke</p>
+                    <p>Phone: +254 700 000 000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GradeUp Celebration Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <script src="scripts/results-animations.js"></script>
+    <script src="scripts/pdf-generator.js"></script>
+</body>
+</html>

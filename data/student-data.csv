@@ -1,0 +1,11 @@
+id,name,class,term1,term2,term3,promoted
+F1-001,John Maina,Form 1,65,72,78,YES
+F1-002,Mary Wanjiku,Form 1,82,85,89,YES
+F1-003,James Otieno,Form 1,45,52,58,NO
+F1-004,Sarah Achieng,Form 1,88,84,91,YES
+F1-005,David Kamau,Form 1,71,76,82,YES
+F2-001,Grace Muthoni,Form 2,78,81,85,YES
+F2-002,Brian Omondi,Form 2,55,63,70,NO
+F2-003,Lucy Njeri,Form 2,91,87,93,YES
+F2-004,Emmanuel Madelle,Form 2,91,90,93,YES
+

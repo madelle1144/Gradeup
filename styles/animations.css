@@ -1,0 +1,185 @@
+/* Confetti animation */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    opacity: 0.7;
+    animation: fall linear forwards;
+}
+
+.confetti:nth-child(2n) {
+    background-color: var(--secondary);
+}
+
+.confetti:nth-child(3n) {
+    background-color: var(--success);
+}
+
+.confetti:nth-child(4n) {
+    background-color: #ffc107;
+}
+
+.confetti:nth-child(5n) {
+    background-color: #6f42c1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Celebration entrance animations */
+.celebration h1 {
+    animation: bounceIn 1s ease-out;
+}
+
+.celebration .student-name {
+    animation: slideInUp 1s ease-out 0.5s both;
+}
+
+.celebration .performance-graph {
+    animation: slideInUp 1s ease-out 1s both;
+}
+
+.celebration .personal-message {
+    animation: slideInUp 1s ease-out 1.5s both;
+}
+
+.celebration .certificate {
+    animation: zoomIn 1s ease-out 2s both;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Button hover effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Loading animation enhancements */
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--primary);
+    border-right: 5px solid var(--secondary);
+    border-bottom: 5px solid var(--success);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+/* Graph bar animations */
+.graph-bar {
+    animation: growWidth 1.5s ease-out;
+}
+
+@keyframes growWidth {
+    from {
+        width: 0%;
+    }
+    to {
+        width: attr(style);
+    }
+}
+
+/* Certificate shine effect */
+.certificate {
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(30deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(30deg);
+    }
+}

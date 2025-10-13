@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeUp Celebration Portal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Grade<span>Up</span> Celebration Portal</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#payment">Check Status</a></li>
+                        <li><a href="#payment">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Discover Your Promotion Status!</h1>
+            <p>Pay 50 KSH to instantly check your class promotion status with a celebratory digital experience and downloadable certificate.</p>
+            <a href="#payment" class="btn">Check Your Status Now</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Easy Payment</h3>
+                    <p>Simple M-Pesa integration for quick 50 KSH payments with instant access.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Celebration Experience</h3>
+                    <p>Dramatic reveal with confetti animation and personalized messages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Performance Graph</h3>
+                    <p>Visual progress tracking across 3 terms with easy-to-understand charts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📜</div>
+                    <h3>Downloadable Certificate</h3>
+                    <p>Branded PDF certificate to share your achievement with friends and family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-section" id="payment">
+        <div class="container">
+            <h2 class="section-title">Check Your Promotion Status</h2>
+            <div class="payment-form">
+                <div class="form-group">
+                    <label for="student-name">Full Name</label>
+                    <input type="text" id="student-name" class="form-control" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="student-id or admin code">Student ID or Admin Code</label>
+                    <input type="text" id="student-id" class="form-control" placeholder="Enter your student ID or admin Code">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (for M-Pesa)</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="07XXXXXXXX (Leave Empty for Admin)">
+                    <p class="admin-hint">💡 Admins: Use your admin code and leave M-Pesa empty</p>
+                </div>
+                <div class="price-tag">50 KSH</div>
+                <button id="pay-btn" class="btn btn-secondary" style="width: 100%;">Pay with M-Pesa</button>
+                
+                <div class="loading" id="payment-loading">
+                    <div class="spinner"></div>
+                    <p>Processing payment...</p>
+                </div>
+                
+                <div class="confirmation" id="payment-confirmation">
+                    <h3>Payment Successful!</h3>
+                    <p>Your promotion status is being retrieved...</p>
+                </div>
+
+                <div class="error-message" id="error-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GradeUp Celebration Portal</h3>
+                    <p>A viral promotion checker where students discover their class promotion status with a celebratory digital experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@gradeup.co.ke</p>
+                    <p>Phone: +254 714781259</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#features">Features</a></p>
+                    <p><a href="#payment">Check Status</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GradeUp Celebration Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/mpesa-payment.js"></script>
+</body>
+</html>
